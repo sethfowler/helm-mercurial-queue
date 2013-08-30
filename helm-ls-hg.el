@@ -136,7 +136,7 @@
         for i in candidates
         collect
         (cond ((string-match "^\\(M \\)\\(.*\\)" i)
-               (cons (propertize i 'face '((:foreground "yellow")))
+               (cons (propertize i 'face '((:foreground "orange")))
                      (expand-file-name (match-string 2 i) root)))
                ((string-match "^\\([?] \\{1\\}\\)\\(.*\\)" i)
                 (cons (propertize i 'face '((:foreground "red")))
